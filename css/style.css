@@ -1,0 +1,248 @@
+body{
+    font: 300 18px/ 1.6em Roboto, Arial, sans-serif;
+   color: #7c8ca0;
+
+}
+
+a{
+    color: #7c8ca0;
+    text-decoration: none;
+}
+
+a:hover{
+    
+    opacity: 0.9;
+}
+
+/* obrazki*/
+img{
+    max-width: 100%;
+    height: auto
+       
+}
+
+/*przyciski btn*/
+
+.btn {
+    display: inline-block;
+    padding: 24px 70px;  
+    color: #0149a1;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2em;
+    border-radius: 30px;
+}
+
+.btn-primary{
+      background-color: #ff2d55;
+    color: #fff;
+    }
+
+.btn-default{
+    
+}
+/* grid*/
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*page header*/
+.page-header{
+    padding: 25px 0; /*tutaj zaczyna się robienie całościowego paska menu na górze w headerze - marginesy odstepu gora dol lewo prawo*/
+   /* width: 2000px;
+   height: 99px; */
+    border-bottom: 1px solid #e4e6ea; /* stworzenie krawędzi na dole paska o wielkości 1px */
+    /* background-color: #ffffff; */ /*kolor nie potrzebny bo i tak jest białe tło */
+}
+
+.page-header > container {  /* bezpośredni element któy jest w page header i ma klase container bo byc moze kontenery sa w srodku*/
+    display: flex;  /* wszystko co w środku ustawione jako flex */
+    justify-content: space-between; /* wyrównanie elementów tak,żeby jedenByłObok drugiego żeby było jakieś miejsce między nimi,logoAnawigacja */
+    align-items: center;  /*centrujemy wszystkie elementy pionowo*/
+}
+
+
+.brand, .brand-img{
+    display: block; /* element blokowy */
+}
+
+/*menu*/
+.menu-items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.margin-items li{
+    margin: 0 4px;
+    display: inline-block;   /* element blokowy czyli tutaj menu wyświetla się obok siebie*/
+}
+
+.menu-items li a{
+padding: 16px 25px;
+display: inline-block;
+color: #5d6981;
+font-size: 20px;
+font-weight: 400;
+line-height: 1.2em;
+}
+
+.menu-items active{
+border-radius: 36px;
+border: 1px solid #9fabba;
+
+}
+
+/*Ikony w menu*/
+.menu-items .menu-icon{
+    margin: 0 8px;
+    
+}
+
+.menu-items .menu-icon a{
+    background-repeat: no-repeat; /*nie chcemy aby tło się powtarzało bo ikony są wrzucone jako tło*/
+    height: 46px;
+    width: 46px;
+    padding: 0;
+}
+
+.facebook-icon{
+    background-image: url(facebook-icon.png);
+}
+
+.twitter-icon{
+    background-image: url(twitter-icon.png);
+    
+}
+
+/*page section*/
+
+.page-section{
+    /* Style for "bg" */
+background-color: #fff;
+background-image: linear-gradient(to top, #edeff1 0%, #edeff1 1%, #ffffff 24%, #e2e4e8 31%, #ffffff 100%);
+}
+
+/*intro section*/
+
+.intro-section{
+    padding-top: 135px;
+    padding-bottom: 130px; 
+    
+    
+}
+
+/*section header*/
+
+.sectiom-header{
+    text-align: center;
+  
+}
+
+.section-header h2{
+ color: #0149a1;
+font-size: 72px;
+font-weight: 700; 
+    margin: 0;
+    
+}
+
+.section-header p{
+color: #5d6981;
+font-size: 36px;
+line-height: 1.3em;
+font-weight: 300;  
+    margin: 28px 0 0;
+}
+
+/*intro-cta czyli w tym przypadku element przycisku*/
+.intro-cta{
+    text-align: center;
+    margin-top: 105px;
+    margin-bottom: 116px;
+}
+
+/*iintro video */
+
+.intro-video{
+    
+    max-width: 1330px;
+    width: 100%;
+    margin: 0 auto;  
+    background: url('czat.png') no-repeat left 55px, url('lampka.png') no-repeat, right 55px; /*pozycjonwanie tych obrazkow*/
+    
+}
+
+/*itro video image */
+
+.intro-video-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1094px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    
+}
+
+.intro-video-image .btn{
+    position: absolute;/*przycisk bedzie pozycjonowany absolutnie automatycznie wzgledem najblizszego pozycjonowanego elementu czyli tu laptopa etc*/
+    margin-top: -50px;
+}
+
+/*feature boxes*/
+
+.feature-boxes{
+    display: flex;
+    justify-content: space-between; /*bedzie miejsce pomiedzy elementami*/
+    
+}
+
+/*container na obrazki*/
+
+.feature-boxes > .container{
+    
+    
+}
+
+.feature-box{ /*same boxy*/
+    flex-basis: 23%; /*szerokosc pojedynczego boxa na obrazek, 23x4 bo 4boxy a reszta to wolne miejsce*/
+    text-align: center; /*tekst wyrownany do srodka*/
+    
+}
+
+.feature-box-img{ /*obrazki w boksach*/
+    margin-bottom: 55px;
+}
+
+.feature-box-h3{ /*tekst glowny pod obrazkiem*/
+    margin: 0 0 25px; /*ustawiona wlasciwosc marginesow mieszana bo domyslnei naglowki maja jeszcze inne marginesy np od obrazka*/
+  
+    color: #5d6981;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.6em;
+ 
+}
+
+.feature-box-p{ /*tekst */
+    margin; 0;
+    
+}
+
+/*stopka*/
+.page-footer{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.page-footer p{
+   margin: 0;
+}
